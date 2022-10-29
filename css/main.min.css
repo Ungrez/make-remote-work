@@ -243,10 +243,22 @@ body.hidden::before {
   }
   #nav_menu_links ul#dropdown-features.loaded,
 #nav_menu_links ul#dropdown-company.loaded {
+    background-color: white;
+    box-shadow: 0 0 18px -10px hsl(0deg, 0%, 8%);
+    padding: 10px;
+    top: 10vh;
+    left: 8vw;
+    border-radius: 15px;
     display: block;
-    z-index: 1;
-    -webkit-animation: showDropdown 0.5s ease-in-out forwards;
-            animation: showDropdown 0.5s ease-in-out forwards;
+    position: fixed;
+    z-index: 4;
+    -webkit-animation: showDropdown 0.2s ease-in-out forwards;
+            animation: showDropdown 0.2s ease-in-out forwards;
+  }
+  #nav_menu_links ul#dropdown-company.loaded {
+    top: 10vh;
+    left: 20vw;
+    padding: 20px;
   }
 }
 
