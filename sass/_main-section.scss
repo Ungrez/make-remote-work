@@ -6,8 +6,15 @@
   background-color: white;
   padding-top: 15px;
 
-  &_pic img {
-    max-width: 100%;
+  &_pic {
+    align-self: center;
+    & img.mobile {
+      max-width: 100%;
+      display: block;
+    }
+    & img.desktop {
+      display: none;
+    }
   }
   &_description {
     display: flex;
@@ -37,6 +44,9 @@
       color: $white-color;
       align-self: center;
       border: none;
+      cursor: pointer;
+      transition: 0.5s;
+      border: 2px solid $black-color;
     }
   }
 
@@ -53,6 +63,62 @@
       & img {
         max-width: 100%;
       }
+    }
+  }
+  @include mq(lg) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 15px;
+    max-width: 80%;
+    gap: 5vw;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    &_pic {
+      flex-basis: 35%;
+      align-self: flex-start;
+      & img.mobile {
+        display: none;
+      }
+      & img.desktop {
+        max-width: 100%;
+        display: block;
+        align-self: center;
+      }
+    }
+    &_description {
+      padding: 20px;
+      justify-content: center;
+      text-align: left;
+      gap: 20px;
+      flex-basis: 50%;
+
+      & h2 {
+        font-size: 82px;
+        word-wrap: normal;
+      }
+      & p {
+        font-size: 24px;
+        padding: 30px 90px 30px 0;
+        line-height: 1.5;
+        color: $gray-color;
+      }
+      &_button {
+        width: 25%;
+        padding: 18px 5px;
+        align-self: flex-start;
+        &:hover {
+          background-color: #ffffff;
+          border: 2px solid $black-color;
+          color: $black-color;
+        }
+      }
+    }
+
+    &_firms {
+      margin-top: 40px;
+      width: 100%;
+      align-self: center;
     }
   }
 }

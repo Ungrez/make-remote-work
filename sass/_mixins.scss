@@ -1,3 +1,11 @@
-@import "variables";
-@import "typography";
-@import "reset";
+@mixin mq($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+
+  @if ($size) {
+    @media (min-width: $size) {
+      @content;
+    }
+  } @else {
+    @error '"#{$breakpoint}" - error';
+  }
+} ;
