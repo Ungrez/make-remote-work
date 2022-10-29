@@ -301,7 +301,7 @@ body.hidden::before {
   flex-direction: column;
   padding: 10px;
   text-align: center;
-  gap: 5px;
+  gap: 10px;
 }
 #main_description h2 {
   margin-top: 20px;
