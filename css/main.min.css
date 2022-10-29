@@ -208,7 +208,7 @@ body.hidden::before {
     display: none;
   }
   #nav_menu_links p {
-    margin-right: 20px;
+    margin: 30px 20px;
     font-size: 16px;
     text-align: right;
     align-self: center;
@@ -247,7 +247,7 @@ body.hidden::before {
     box-shadow: 0 0 18px -10px hsl(0deg, 0%, 8%);
     padding: 10px;
     top: 10vh;
-    left: 8vw;
+    left: 170px;
     border-radius: 10px;
     display: block;
     position: fixed;
@@ -257,7 +257,7 @@ body.hidden::before {
   }
   #nav_menu_links ul#dropdown-company.loaded {
     top: 10vh;
-    left: 20vw;
+    left: 360px;
     padding: 20px;
   }
 }
@@ -373,7 +373,7 @@ body.hidden::before {
   }
   #main_description h2 {
     font-size: 82px;
-    overflow-wrap: anywhere;
+    padding-right: 180px;
   }
   #main_description p {
     font-size: 24px;
