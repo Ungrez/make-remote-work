@@ -1,0 +1,56 @@
+@import "variables";
+#main {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  background-color: white;
+
+  &_pic img {
+    max-width: 100%;
+  }
+  &_description {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+
+    & h2 {
+      margin-top: 20px;
+      font-size: 38px;
+      color: $black-color;
+    }
+    & p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: $gray-color;
+    }
+    &_button {
+      background-color: $black-color;
+      width: 40%;
+      padding: 15px 20px;
+      border-radius: 15px;
+      font-size: 18px;
+      font-weight: 700;
+      color: $white-color;
+      align-self: center;
+      border: none;
+    }
+  }
+
+  &_firms {
+    display: flex;
+    padding: 0 20px;
+    height: 10vh;
+    align-self: center;
+    justify-content: space-between;
+
+    & div {
+      width: 20%;
+      align-self: center;
+      & img {
+        max-width: 100%;
+      }
+    }
+  }
+}

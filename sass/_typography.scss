@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+body {
+  position: relative;
+  font-family: Epilogue, sans-serif;
+  transition: 0.5s;
+  overflow: hidden;
+}
+body.hidden::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  backdrop-filter: brightness(30%);
+}

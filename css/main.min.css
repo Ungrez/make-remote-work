@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+body {
+  position: relative;
+  font-family: Epilogue, sans-serif;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+body.hidden::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  -webkit-backdrop-filter: brightness(30%);
+          backdrop-filter: brightness(30%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nav {
+  display: flex;
+  height: 10vh;
+  padding: 15px;
+  justify-content: space-between;
+  align-self: center;
+}
+#nav_title {
+  font-size: 34px;
+  align-self: center;
+}
+#nav_menu {
+  height: 20px;
+  align-self: center;
+}
+#nav_menu_links {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  flex-direction: column;
+  z-index: 3;
+  color: hsl(0deg, 0%, 41%);
+  transition: 0.5s;
+}
+#nav_menu_links.hidden {
+  right: -100%;
+}
+#nav_menu_links ul {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 2.5;
+  padding: 0 30px;
+}
+#nav_menu_links li {
+  list-style: none;
+}
+#nav_menu_links li:nth-child(1) {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+#nav_menu_links li:nth-child(1) img {
+  align-self: center;
+}
+#nav_menu_links p {
+  margin: 30px auto 20px;
+  font-size: 18px;
+  text-align: center;
+}
+#nav_menu_links button {
+  width: 80%;
+  align-self: center;
+  padding: 15px;
+  font-size: 16px;
+  color: hsl(0deg, 0%, 41%);
+  border: 1.8px solid hsl(0deg, 0%, 8%);
+  background-color: #ffffff;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  background-color: white;
+}
+#main_pic img {
+  max-width: 100%;
+}
+#main_description {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  gap: 20px;
+}
+#main_description h2 {
+  margin-top: 20px;
+  font-size: 38px;
+  color: hsl(0deg, 0%, 8%);
+}
+#main_description p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: hsl(0deg, 0%, 41%);
+}
+#main_description_button {
+  background-color: hsl(0deg, 0%, 8%);
+  width: 40%;
+  padding: 15px 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 98%);
+  align-self: center;
+  border: none;
+}
+#main_firms {
+  display: flex;
+  padding: 0 20px;
+  height: 10vh;
+  align-self: center;
+  justify-content: space-between;
+}
+#main_firms div {
+  width: 20%;
+  align-self: center;
+}
+#main_firms div img {
+  max-width: 100%;
+}/*# sourceMappingURL=main.min.css.map */
