@@ -248,7 +248,7 @@ body.hidden::before {
     padding: 10px;
     top: 10vh;
     left: 8vw;
-    border-radius: 15px;
+    border-radius: 10px;
     display: block;
     position: fixed;
     z-index: 4;
@@ -373,7 +373,7 @@ body.hidden::before {
   }
   #main_description h2 {
     font-size: 82px;
-    word-wrap: normal;
+    overflow-wrap: anywhere;
   }
   #main_description p {
     font-size: 24px;
