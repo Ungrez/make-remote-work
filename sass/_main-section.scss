@@ -4,6 +4,7 @@
   flex-direction: column;
   height: 90vh;
   background-color: white;
+  padding-top: 15px;
 
   &_pic img {
     max-width: 100%;
@@ -11,17 +12,18 @@
   &_description {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    gap: 20px;
+    gap: 5px;
 
     & h2 {
       margin-top: 20px;
-      font-size: 38px;
+      font-size: 36px;
       color: $black-color;
     }
     & p {
-      font-size: 18px;
+      font-size: 16px;
+      padding: 10px;
       line-height: 1.5;
       color: $gray-color;
     }
@@ -30,7 +32,7 @@
       width: 40%;
       padding: 15px 20px;
       border-radius: 15px;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 700;
       color: $white-color;
       align-self: center;
